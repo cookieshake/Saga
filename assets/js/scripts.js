@@ -33,7 +33,7 @@
 
             this.getScript('/assets/js/helper/highlight.min.js')
             .then(function() { 
-                hljs.initHighlightingOnLoad();
+                hljs.initHighlighting();
             });
         },
 
