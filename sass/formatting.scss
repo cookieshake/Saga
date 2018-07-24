@@ -1,7 +1,7 @@
 h1, h2, h3, h4 {
     margin: {
         top: 30px;
-        bottom: 10px;
+        bottom: 20px;
     }
     font-family: $font-heading;
     font-weight: bold;
@@ -58,11 +58,14 @@ mark {
 
 sup {
     vertical-align: super;
-    @nclude font-size(13);
+    @include font-size(13);
+    a {
+        border-bottom: none;
+    }
 }
 
 blockquote {
-    font-family: "Noto Serif", serif;
+    font-family: $font-serif;
     border-left: 4px solid darken($white, 10%);
     padding-left: 20px;
     img {
@@ -73,7 +76,7 @@ blockquote {
 
 q {
     display: block;
-    font-family: "Noto Serif", serif;
+    font-family: $font-serif;
     text-align: center;
     font-size: 125%;
     font-style: italic;
@@ -191,9 +194,9 @@ code {
 pre {
     margin: {
         top: 30px;
-        bottom: 10px;
-        left: 20px;
-        right: 20px;
+        bottom: 20px;
+        left: 10px;
+        right: 10px;
     }
     word-wrap: break-word;
     code {
@@ -209,6 +212,13 @@ hr {
     background: darken($white, 10%);
 }
 
+a.footnote-backref {
+    border-bottom: none;
+}
+
+.footnote-item p {
+    margin-bottom: 0.3em;
+}
 
 .hidden {
     display: none;
@@ -230,7 +240,7 @@ hr {
     h1, h2, h3, h4 {
         margin: {
             top: 40px;
-            bottom: 10px;
+            bottom: 20px;
         }
     }
 }
@@ -351,6 +361,3 @@ hr {
         margin-left: calc(-50% - 5px);
     }
 }
-
-
-@import "github";

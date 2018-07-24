@@ -13,9 +13,10 @@ Importing compass and reset stylesheets and mixins.
 Setting up the variables. Default fonts, colors, widths and breakpoints.
 --------------- */
 
-$font: "Noto Sans", Helvetica, "Helvetica Neue", Arial, sans-serif;
+$font: "Nanum Square", sans-serif;
+$font-serif: "Iropke Batang", serif;
 $font-heading: $font;
-$font-monospace: "Inconsolata", Consolas, "Droid Sans Mono", "Courier New";
+$font-monospace: "D2Coding", "Nanum Gothic Coding", monospace;
 $black: #000;
 $white: #FFF;
 $transparent-grey: rgba(0,0,0,0.8);

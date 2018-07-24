@@ -3,7 +3,7 @@ body {
     min-height: 100%;
     background: darken($white, 5%);
     font-family: $font;
-    @include font-size(14);
+    @include font-size(16);
     line-height: 1.8;
     color: $transparent-grey;
     overflow-y: scroll;
